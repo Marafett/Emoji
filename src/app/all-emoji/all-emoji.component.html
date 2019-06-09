@@ -1,0 +1,20 @@
+<h2>Все смайлы</h2>
+<div class="searchSmile">
+    Поиск: <input type="text" [(ngModel)]="names" (input)="Search()"/>
+</div>
+<table class="table table-bordered">
+    <thead class="thead-light">
+    <tr><th>Название</th><th>Адрес</th><th>Превью</th><th colspan="2">Действие</th></tr>
+    </thead>
+    <tr *ngFor="let emoji of emojis; let ind = index" >
+        <td>{{ emoji.name }}</td>
+        <td>{{ emoji.citation }}</td>
+        <td [class.qwert1]="mainService.getSelected(emoji.name)"><img [class.qwert]="mainService.getSelected(emoji.name)" width="25px" height="25px" src="{{ emoji.citation }}"></td>
+        <td><button class="btn btn-success rounded-pill" (click)="mainService.getPlus(emoji.name, emoji.citation, ind)" [disabled]="mainService.getSelected(emoji.name)">*</button></td>
+        <td><button class="btn btn-danger" (click)="mainService.getDelEmoji(emoji.name, emoji.citation, ind)" [disabled]="mainService.getSelected(emoji.name)">-</button></td>
+    </tr>
+</table>
+
+
+
+

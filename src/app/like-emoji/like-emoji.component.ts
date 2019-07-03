@@ -10,6 +10,7 @@ import { Emoji } from '../emoji';
 export class LikeEmojiComponent implements OnInit {
   emojisLike: Emoji[];
   names: string;
+  p: number;
 
   constructor(public mainService: MainService) {
     this.emojisLike = mainService.emojisLike

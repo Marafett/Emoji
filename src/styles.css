@@ -1,28 +1,27 @@
 h2 {
     text-align: center;
+    font-family: comic sans ms;
 }
 
 table {
-    
     text-align: center;
-    
-}
-
-.qwert {
-    width: 35px;
-    height: 35px;
 }
 
 .qwert1{
-    box-shadow: inset 2px 2px 5px rgb(8, 250, 0), 1px 1px 5px rgba(30, 255, 0, 0.993);
+    box-shadow: inset 2px 2px 5px rgb(27, 2, 255), 1px 1px 5px rgba(4, 0, 255, 0.993);
 }
 
 .searchSmile{
     text-align: end;
 }
 
+input{
+    border: 1px solid #dee2e6
+}
+
 td {
     word-break: break-all ;
+    height: 73px;
 }
 
 td img:hover {
@@ -31,8 +30,19 @@ td img:hover {
     transform: scale(4);
 }
 
-.container {
-    min-height: 500px;
+.colorNav{
+    background:#e9ecef;
+    border-color: #dee2e6;
 }
 
+.searchSmile{
+    margin-bottom: 10px;
+}
 
+nav{
+    margin-top: 45px;
+}
+
+.container{
+    background-color: #f9fad59d
+}

@@ -10,6 +10,7 @@ import { Emoji } from '../emoji';
 export class DeleteEmojiComponent implements OnInit {
   emojisDel: Emoji[];
   names: string;
+  p:number;
 
 
   constructor(public mainService: MainService) {

@@ -1,16 +1,12 @@
-import { Component } from '@angular/core';
-import { MainService } from './main.service';
+import { Component } from "@angular/core";
+import { MainService } from "./main.service";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers:[MainService]
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
+  providers: [MainService]
 })
-
 export class AppComponent {
-
-
-  constructor(public mainService: MainService) { }
-  
+  constructor(public mainService: MainService) {}
 }

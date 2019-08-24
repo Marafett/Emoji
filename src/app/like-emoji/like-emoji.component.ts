@@ -16,18 +16,5 @@ export class LikeEmojiComponent implements OnInit {
     this.emojisLike = mainService.emojisLike;
   }
 
-  Search() {
-    if (this.names != "") {
-      this.emojisLike = this.mainService.emojisLike;
-      this.emojisLike = this.emojisLike.filter(res => {
-        return res.name
-          .toLocaleLowerCase()
-          .match(this.names.toLocaleLowerCase());
-      });
-    } else {
-      this.emojisLike = this.mainService.emojisLike;
-    }
-  }
-
   ngOnInit() {}
 }

@@ -1,6 +1,6 @@
 <h2>Все смайлы</h2>
 <div class="searchSmile">
-  Поиск : <input type="text" [(ngModel)]="names" (input)="Search()" />
+  Поиск : <input type="text" [(ngModel)]="names"/>
 </div>
 <table class="table table-bordered">
   <thead class="thead-light">
@@ -13,7 +13,7 @@
   </thead>
   <tr
     *ngFor="
-      let emoji of emojis | paginate: { itemsPerPage: 10, currentPage: p };
+      let emoji of emojis | filter:names | paginate: { itemsPerPage: 10, currentPage: p };
       let ind = index
     "
   >

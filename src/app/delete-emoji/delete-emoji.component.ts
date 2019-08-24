@@ -16,18 +16,5 @@ export class DeleteEmojiComponent implements OnInit {
     this.emojisDel = mainService.emojisDel;
   }
 
-  Search() {
-    if (this.names != "") {
-      this.emojisDel = this.mainService.emojisDel;
-      this.emojisDel = this.emojisDel.filter(res => {
-        return res.name
-          .toLocaleLowerCase()
-          .match(this.names.toLocaleLowerCase());
-      });
-    } else {
-      this.emojisDel = this.mainService.emojisDel;
-    }
-  }
-
   ngOnInit() {}
 }

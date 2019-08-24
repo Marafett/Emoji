@@ -14,6 +14,7 @@ import { DeleteEmojiComponent } from './delete-emoji/delete-emoji.component';
 import { LikeEmojiComponent } from './like-emoji/like-emoji.component';
 // import { InMemoryService } from './api/in-memory.service';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 const appRoutes: Routes = [
   {path: '', component: WelcomeComponent},
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     AllEmojiComponent,
     DeleteEmojiComponent,
     LikeEmojiComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

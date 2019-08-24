@@ -5,14 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxPaginationModule } from 'ngx-pagination'
-// import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+
 
 
 import { AppComponent } from './app.component';
 import { AllEmojiComponent } from './all-emoji/all-emoji.component';
 import { DeleteEmojiComponent } from './delete-emoji/delete-emoji.component';
 import { LikeEmojiComponent } from './like-emoji/like-emoji.component';
-// import { InMemoryService } from './api/in-memory.service';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FilterPipe } from './pipes/filter.pipe';
 

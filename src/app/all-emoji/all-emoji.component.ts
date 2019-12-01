@@ -12,13 +12,9 @@ export class AllEmojiComponent implements OnInit {
   names: string;
   p: number;
 
-  constructor(public mainService: MainService) {
-    this.getPagEmoji();
-  }
+  constructor(public mainService: MainService) {}
 
-  getPagEmoji() {
+  ngOnInit() {
     this.emojis = this.mainService.emojis;
   }
-
-  ngOnInit() {}
 }

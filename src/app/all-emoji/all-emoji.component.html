@@ -1,6 +1,6 @@
 <h2>Все смайлы</h2>
 <div class="searchSmile">
-  Поиск : <input type="text" [(ngModel)]="names"/>
+  <input type="text" placeholder="Найти" [(ngModel)]="names"/>
 </div>
 <table class="table table-bordered">
   <thead class="thead-light">
@@ -18,7 +18,7 @@
     "
   >
     <td class="align-middle">{{ emoji.name }}</td>
-    <td class="align-middle">{{ emoji.citation }}</td>
+    <td class="align-middle"><a href="{{ emoji.citation }}">{{ emoji.citation }}</a></td>
     <td
       class="align-middle"
       [class.qwert1]="mainService.getSelected(emoji.name)"
@@ -36,7 +36,7 @@
         (click)="mainService.getPlus(emoji.name, emoji.citation, ind)"
         [disabled]="mainService.getSelected(emoji.name)"
       >
-        +
+      ✓
       </button>
     </td>
     <td class="align-middle">
@@ -45,7 +45,7 @@
         (click)="mainService.getDelEmoji(emoji.name, emoji.citation, ind)"
         [disabled]="mainService.getSelected(emoji.name)"
       >
-        -
+      ✗
       </button>
     </td>
   </tr>

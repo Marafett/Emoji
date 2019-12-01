@@ -1,6 +1,6 @@
 <h2>Любимые смайлы</h2>
 <div class="searchSmile">
-  Поиск : <input type="text" [(ngModel)]="names"/>
+  <input type="text" placeholder="Найти" [(ngModel)]="names"/>
 </div>
 <table class="table table-bordered">
   <thead class="thead-light">
@@ -24,7 +24,7 @@
     </td>
     <td class="align-middle">
       <button class="btn btn-danger" (click)="mainService.getNotEmoji(ind)">
-        -
+        ✗
       </button>
     </td>
   </tr>

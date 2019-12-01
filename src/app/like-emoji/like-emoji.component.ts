@@ -12,9 +12,9 @@ export class LikeEmojiComponent implements OnInit {
   names: string;
   p: number;
 
-  constructor(public mainService: MainService) {
-    this.emojisLike = mainService.emojisLike;
-  }
+  constructor(public mainService: MainService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.emojisLike = this.mainService.emojisLike;
+  }
 }

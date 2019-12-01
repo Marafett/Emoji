@@ -1,6 +1,6 @@
 <h2>Удаленные смайлы</h2>
 <div class="searchSmile">
-  Поиск : <input type="text" [(ngModel)]="names"/>
+  <input type="text" placeholder="Найти" [(ngModel)]="names"/>
 </div>
 <table class="table table-bordered">
   <thead class="thead-light">
@@ -27,7 +27,7 @@
         class="btn btn-success rounded-circle"
         (click)="mainService.getVostEmoji(emoji.name, emoji.citation, ind)"
       >
-        +
+      ✓
       </button>
     </td>
   </tr>

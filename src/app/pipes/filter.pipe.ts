@@ -8,12 +8,10 @@ export class FilterPipe implements PipeTransform {
 
   transform(value: Emoji[], names: string = ''): Emoji[] {
     if(!names.trim()){
-      return value
+      return value;
     }
-    return value.filter(n => {
-      return n.name.includes(names)
-    })
 
+    return value.filter(n =>  n.name.includes(names))
   }
 
 }

@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  background-image: url(src\assets\smile1.jpg);
+  background-size: cover;
+}
+
 h2 {
   text-align: center;
   font-family: comic sans ms;
@@ -10,15 +20,34 @@ table {
 .qwert1 {
   box-shadow: inset 0 15px 15px -15px rgb(17, 0, 255),
     inset 0 -15px 15px -15px rgb(17, 0, 255);
-  background-color: rgb(240, 240, 240);
 }
 
 .searchSmile {
-  text-align: end;
+  text-align: center;
 }
 
 input {
-  border: 1px solid #dee2e6;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #f7feffe8;
+  width: 50%;
+  margin: 0;
+  padding: 5px 20px;
+  outline: none;
+}
+
+a {
+  outline: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+input:focus {
+  border-color: rgb(71, 51, 255) ;
 }
 
 td {
@@ -32,11 +61,6 @@ td img:hover {
   transform: scale(4);
 }
 
-.colorNav {
-  background: #e9ecef;
-  border-color: #dee2e6;
-}
-
 .searchSmile {
   margin-bottom: 10px;
 }
@@ -46,7 +70,7 @@ nav {
 }
 
 .container {
-  background-color: #f7feff9d;
+  background-color: #f7feffe8;
 }
 
 button.btn.btn-danger {
@@ -114,4 +138,8 @@ button.btn.btn-success {
 .ngx-pagination a:hover {
   border-radius: 5px;
   text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: white;
 }

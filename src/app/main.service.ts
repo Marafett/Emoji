@@ -66,8 +66,10 @@ export class MainService {
     this.sortArray(this.emojisDel);
     this.checkDel++;
     for (let i = 0; i < this.emojis.length; i++) {
-      if (ind == i) {
-        this.emojis.splice(i, 1);
+      for (let j in this.emojis[i]) {
+        if (name == this.emojis[i][j]) {
+          this.emojis.splice(i, 1);
+        }
       }
     }
     localStorage.setItem("checkDel", JSON.stringify(this.checkDel));

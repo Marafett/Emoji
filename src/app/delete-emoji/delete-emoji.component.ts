@@ -12,9 +12,9 @@ export class DeleteEmojiComponent implements OnInit {
   names: string;
   p: number;
 
-  constructor(public mainService: MainService) {
-    this.emojisDel = mainService.emojisDel;
-  }
+  constructor(public mainService: MainService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.emojisDel = this.mainService.emojisDel;
+  }
 }
